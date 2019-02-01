@@ -6,12 +6,15 @@ public class Process {
 		this.score = score;
 	}
 	
-	public char calculate() {
-		char grade;
+	public String calculate() {
+		String grade;
 		if(score >= 80) {
-			grade = 'A';
-		}else {
-			grade = 'F';
+			grade = "A";
+		}else if(score >= 75) {
+			grade = "B+";
+		}
+		else {
+			grade = "F";
 		}
 		return grade;
 	}
