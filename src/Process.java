@@ -7,6 +7,12 @@ public class Process {
 	}
 	
 	public char calculate() {
-		return (Character) null;
+		char grade;
+		if(score >= 80) {
+			grade = 'A';
+		}else {
+			grade = 'F';
+		}
+		return grade;
 	}
 }
